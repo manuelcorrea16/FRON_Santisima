@@ -1,5 +1,5 @@
 /*!
-* Start Bootstrap - Santisima SPA v7.0.8 (https://startbootstrap.com/theme/business-casual)
+* Start Bootstrap - Santisima SPA v7.0.8 (https://startbootstrap.com/theme/SantisimaSpa)
 * Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/santisima_spa/blob/master/LICENSE)
 */
