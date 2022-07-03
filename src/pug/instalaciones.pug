@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title  Santisima SPA
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+
+        section.page-section
+            .container
+                .product-item
+                    .product-item-title.d-flex
+                        .bg-faded.p-5.d-flex.ms-auto.rounded
+                            h2.section-heading.mb-0
+                                span.section-heading-lower Bello Antioquia
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/bello.jpg' alt='...')
+                    .product-item-description.d-flex.me-auto
+                        .bg-faded.p-5.rounded
+                            p.mb-0
+                                | Nuestras instalaciones están acomodadas con la mayor tecnología y proceso de bioseguridad, para el cuidado de nuestros clientes. Estamos ubicados en el centro comercial Niquia local 239
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/bello2.jpg' alt='...')
+        section.page-section
+            .container
+                .product-item
+                    .product-item-title.d-flex
+                        .bg-faded.p-5.d-flex.me-auto.rounded
+                            h2.section-heading.mb-0
+                                span.section-heading-lower Bogotá
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/Bogota.jpg' alt='...')
+                    .product-item-description.d-flex.ms-auto
+                        .bg-faded.p-5.rounded
+                            p.mb-0
+                                | En Bogotá nos encontramos en el centro comercial Siete Mares local 185
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/bogota1.jpg' alt='...')
+
+        include includes/footer
+
+        include includes/scripts

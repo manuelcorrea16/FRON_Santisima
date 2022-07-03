@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Santisima SPA
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-9.col-lg-10.mx-auto
+                            .bg-faded.rounded.p-5
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper Promociones
+                                    span.section-heading-lower ¡Aprovecha!
+                                p
+                                    | Contamos con diferentes promociones
+                        img.diseno(src='assets/img/promo2.jpg', alt='...')
+                        img.diseno(src='assets/img/promo3.jpg', alt='...')
+                        img.diseno(src='assets/img/promo4.jpg', alt='...')
+                        img.diseno(src='assets/img/promo5.jpg', alt='...')
+        include includes/footer
+
+        include includes/scripts

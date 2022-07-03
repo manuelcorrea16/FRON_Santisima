@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Santisima SPA
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+
+        section.page-section.cta
+            .container
+                .row
+                    .col-xl-9.mx-auto
+                        .cta-inner.bg-faded.text-center.rounded
+                            h2.section-heading.mb-5
+                                span.section-heading-upper Horarios
+                                span.section-heading-lower Nuestros Talleres
+                            ul.list-unstyled.list-hours.mb-5.text-left.mx-auto
+                                li.list-unstyled-item.list-hours-item.d-flex
+                                    | Dia
+                                    span.ms-auto Cierra
+                                li.list-unstyled-item.list-hours-item.d-flex
+                                    | Miercoles
+                                    span.ms-auto 7:00 AM to 10:00 AM
+                                li.list-unstyled-item.list-hours-item.d-flex
+                                    | Viernes
+                                    span.ms-auto 7:00 AM to 8:00 PM
+                                li.list-unstyled-item.list-hours-item.d-flex
+                                    | Sabado
+                                    span.ms-auto 7:00 AM to 8:00 PM
+                            p.address.mb-5
+                                em
+                                    strong Se debe tener encuenta que estos horarios cambian cada Semana
+                                    br
+                                    | Cualquier duda comunicarse al SPA
+                            p.mb-0
+                                small
+                                    em Llamar
+                                br
+                                | (300) 6085339
+
+        section.page-section.about-heading
+            .container
+                img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='assets/img/certificado.jpg', alt='...')
+                .about-heading-content
+                    .row
+                        .col-xl-9.col-lg-10.mx-auto
+                            .bg-faded.rounded.p-5
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper Nuestros talleres
+                                    span.section-heading-lower Nuestros talleres
+                                p
+                                    | Contamos con personal capacitado para dictar los talleres, durante el proceso se aprenderá cada detalle con el que trabajamos y al finalizar se realizara entrega de un certificado de asistencia.
+                                strong Acontinuación se visualizara algunas fotos de nuestros talleres
+                        img.diseno(src='assets/img/taller1.jpg', alt='...')
+                        img.diseno(src='assets/img/taller2.jpg', alt='...')
+                        img.diseno(src='assets/img/taller3.jpg', alt='...')
+                        img.diseno(src='assets/img/taller4.jpg', alt='...')
+                        img.diseno(src='assets/img/taller5.jpg', alt='...')
+                        img.diseno(src='assets/img/taller6.jpg', alt='...')
+                        img.diseno(src='assets/img/taller7.jpg', alt='...')
+
+        include includes/footer
+
+        include includes/scripts

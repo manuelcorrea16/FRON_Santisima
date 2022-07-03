@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Santisima SPA
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-9.col-lg-10.mx-auto
+                            .bg-faded.rounded.p-5
+                                #main
+                                form(action="#")
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper login form
+                                div.username
+                                    input(type="text" placeholder="usuario")
+                                br
+                                div.password
+                                    input(type="password" placeholder="clave")
+                                div.checkbox
+                                    input(type='checkbox' name='agreement' checked)
+                                    |Recordar
+                                button(type="button") Ingresar
+                                p
+                                    | No tengo cuenta
+                                    a(href="#") Registrarse
+
+
+
+
+        include includes/footer
+
+        include includes/scripts
