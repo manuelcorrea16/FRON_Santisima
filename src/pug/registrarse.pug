@@ -28,20 +28,23 @@ html(lang='en')
                                 #main
                                 form(action="#")
                                 h2.section-heading.mb-4
-                                    span.section-heading-upper Ingresar
+                                    span.section-heading-upper Crear una cuenta nueva
                                 div.username
-                                    input(type="text" placeholder="Usuario")
-                                br
+                                    input(type="text" placeholder="Nombres")
+                                div.username
+                                     input(type="email" placeholder="Correo")
+                                
                                 div.password
-                                    input(type="password" placeholder="Clave")
+                                    input(type="password" placeholder="Contraseña")
+                                div.password
+                                    input(type="password" placeholder="Confirmar contraseña")
                                 div.checkbox
                                     input(type='checkbox' name='agreement' checked)
                                     |Recordar
-                                button(type="button") Ingresar
+                                button(type="button") Registrarse
                                 p
                                     a(href='recordar-contraseña.html') Recordar contraseña 
-                                p                                    
-                                    a(href='registrarse.html') Registrarse
+                               
 
 
 
