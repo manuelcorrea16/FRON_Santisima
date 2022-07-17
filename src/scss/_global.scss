@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(rgb(82 65 99 / 65%), rgb(148 78 152 / 65%)), url(../assets/img/spa.jpg);
+    background-image: linear-gradient(rgba(82, 65, 99, 0), rgba(148, 78, 152, 0)), url(../assets/img/spa.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -12,9 +12,9 @@ p {
 .text-faded {
     color: lighten($primary, 25%);
 }
-img.logo{
-    width: 100px;
-}
+//img.logo{
+  //  width: 100px;
+//}
 .span.nombre{
     font-family: cursive;
 }
@@ -86,8 +86,8 @@ img.logo{
   }
 
   button {
-    background: #9145c6;
-    color: #fff;
+    background: #c6ac38;
+    color: rgb(0, 0, 0);
     border: 0px;
     width: 100%;
     padding: 10px;
@@ -97,7 +97,7 @@ img.logo{
   }
 
   .checkbox {
-    color: #fff;
+    color: #050505;
     padding-bottom: 10px;
   }
   h3 {
@@ -128,11 +128,11 @@ img.logo{
   }
 
   .social button:nth-child(1) {
-    background-color: #e100ff;
+    background-color: #000000;
   }
 
   .social button:nth-child(2) {
-    background-color: #e74c3c;
+    background-color: #000000;
   }
 
   .fa {
@@ -143,12 +143,13 @@ img.logo{
   a {
     padding-left: 5px;
     text-decoration: none;
-    color: #e836ee;
+    color: #c6ac38;
     text-transform: capitalize;
   }
 
   a:hover {
     text-decoration: underline;
+    color: #c6ac38;
   }
 
 
