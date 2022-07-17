@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Santisima SPA
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-6.col-lg-7.mx-auto
+                            .bg-faded.rounded.p-5
+                                #main
+                                form(action="#")
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper Agenda tú cita
+                                div.username
+                                    input(type="text" placeholder="Sede")
+                                br
+                                div.username
+                                    input(type="number" placeholder="servicio")
+                                br
+                                div.username
+                                    input(type="date" placeholder="fecha")
+                                br
+                                div.username
+                                    input(type="time" placeholder="Horario")
+                                br
+                                div.username
+                                    input(type="number" placeholder="Cedula")
+                                
+                                
+                                button(type="button") Ingresar
+                                p
+                                    a(href='recordar-contraseña.html') Recordar contraseña 
+                                p                                    
+                                    a(href='registrarse.html') Registrarse
+
+
+
+
+        include includes/footer
+
+        include includes/scripts
