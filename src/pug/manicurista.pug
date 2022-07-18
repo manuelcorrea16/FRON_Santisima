@@ -19,18 +19,23 @@ html(lang='en')
         include includes/header
 
         include includes/navbarGerente
+        section.page-section.cta
+                .container
+                    .row
+                        .col-xl-9.mx-auto
+                            .cta-inner.text-center.rounded
+                                h2.section-heading.mb-5                                   
+                                ul.list-unstyled.list-hours.mb-5.text-left.mx-auto                                      
+                                        table(class="table" id="table")
+                                            thead                                             
+                                                    th documento  
+                                                    th nombre 
+                                                    th celular
+                                                    th dirección    
+                                        script(src="js/table.js")   
+                                        script(src="js/manicuristaScript.js")
+                                
 
-        table(class="table" id="table")
-            thead 
-                th documento  
-                th nombre 
-                th celular
-                th dirección
-        script(src="js/table.js")   
-        script(src="js/manicuristaScript.js")        
-              
-                
+        include includes/footer
 
-    include includes/footer
-
-    include includes/scripts
+        include includes/scripts

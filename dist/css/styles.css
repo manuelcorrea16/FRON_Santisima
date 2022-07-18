@@ -11306,8 +11306,8 @@ p {
   font-family: cursive;
 }
 
-.th {
-  color: #ffff;
+th {
+  color: #ffeded;
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
