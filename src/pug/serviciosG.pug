@@ -20,15 +20,55 @@ html(lang='en')
 
         include includes/navbarGerente
 
-        table(class="table" id="table")
-            thead 
-                th Dirección   
-                th Ciudad
-                th Nombre
-        script(src="js/table.js")         
-        script(src="js/servicioScript.js")        
-                
-
-    include includes/footer
-
-    include includes/scripts
+        section.page-section.cta
+                .container
+                    .row
+                        .col-xl-9.mx-auto
+                            .cta-inner.text-center.rounded
+                                h2.section-heading.mb-5                                   
+                                ul.list-unstyled.list-hours.mb-5.text-left.mx-auto                                      
+                                        table(class="table" id="table")
+                                            thead                                             
+                                                    th Documento  
+                                                    th Nombre 
+                                                    th Celular
+                                                    th Dirección 
+                                                    th Borrar
+                                                    th Actualizar   
+                                        
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-6.col-lg-7.mx-auto
+                            .bg-faded.rounded.p-5
+                                #main
+                                    form(id="form" action="#")
+                                        h2.section-heading.mb-4
+                                            span.section-heading-upper Crear Servicio
+                                        div.username
+                                            input(name='id' id='id' type="text" placeholder="idservicio" value=162635) 
+                                        br
+                                        div.username
+                                            input(name='nombre' id='nombre' type="text" placeholder="Nombre de la Ciudad"  value='verna') 
+                                        br
+                                        div.username 
+                                            input(name='duracion' id='duracion' type="text" placeholder="duracion" ) 
+                                        br
+                                        div.username
+                                            input(name='materiales' id='materiales' type="text" placeholder="Materiales"  ) 
+                                        br
+                                        div.username
+                                            input(name='costo' id='costo' type="text" placeholder="Costo" ) 
+                                        br
+                                        div.username
+                                            input(name='idInsumo' id='idInsumo' type="text" placeholder="insumo y administrador de cedula"  ) 
+                                        br
+                                        div.username
+                                            input(name='adminSede' id='adminSede' type="text" placeholder="insumo, administrador sede y direccion"  )
+                                        br
+                                        div.username
+                                            input(name='adminGerente' id='adminGerente' type="text" placeholder="insumo, gerente"  )
+                                        input(type="submit" value="agregar")                  
+        script(src="js/table.js")   
+        script(src="js/serviciosScript.js")  

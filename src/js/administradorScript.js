@@ -4,7 +4,7 @@ form.addEventListener('submit',()=>{
     
     const formData= new FormData(form) 
     /*const path = ('/profesor/create/create.php')*/
-    const path = ("../src/php/cSede.php")
+    const path = ("../src/php/cAdministrador.php")
     fetch(path, {
         method: 'POST',
         body: formData,

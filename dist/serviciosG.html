@@ -41,21 +41,63 @@ span.nombre  Santisima SPA-->
                 </div>
             </div>
         </nav>
-        <table class="table" id="table">
-            <thead>
-                <th>Dirección</th>
-                <th>Ciudad</th>
-                <th>Nombre</th>
-            </thead>
-        </table>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner text-center rounded">
+                            <h2 class="section-heading mb-5"></h2>
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                <table class="table" id="table">
+                                    <thead>
+                                        <th>Documento</th>
+                                        <th>Nombre</th>
+                                        <th>Celular</th>
+                                        <th>Dirección</th>
+                                        <th>Borrar</th>
+                                        <th>Actualizar</th>
+                                    </thead>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section about-heading">
+            <div class="container">
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <div id="main">
+                                    <form id="form" action="#">
+                                        <h2 class="section-heading mb-4"><span class="section-heading-upper">Crear Servicio</span></h2>
+                                        <div class="username"><input name="id" id="id" type="text" placeholder="idservicio" value="162635" /></div>
+                                        <br />
+                                        <div class="username"><input name="nombre" id="nombre" type="text" placeholder="Nombre de la Ciudad" value="verna" /></div>
+                                        <br />
+                                        <div class="username"><input name="duracion" id="duracion" type="text" placeholder="duracion" /></div>
+                                        <br />
+                                        <div class="username"><input name="materiales" id="materiales" type="text" placeholder="Materiales" /></div>
+                                        <br />
+                                        <div class="username"><input name="costo" id="costo" type="text" placeholder="Costo" /></div>
+                                        <br />
+                                        <div class="username"><input name="idInsumo" id="idInsumo" type="text" placeholder="insumo y administrador de cedula" /></div>
+                                        <br />
+                                        <div class="username"><input name="adminSede" id="adminSede" type="text" placeholder="insumo, administrador sede y direccion" /></div>
+                                        <br />
+                                        <div class="username"><input name="adminGerente" id="adminGerente" type="text" placeholder="insumo, gerente" /></div>
+                                        <input type="submit" value="agregar" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script src="js/table.js"></script>
-        <script src="js/servicioScript.js"></script>
+        <script src="js/serviciosScript.js"></script>
     </body>
-    <footer class="footer text-faded text-center py-2">
-        <div class="container"><p class="m-0 small">&copy; Santisima SPA 2022 - Politecnico Jaime Isaza Cadavid</p></div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </html>

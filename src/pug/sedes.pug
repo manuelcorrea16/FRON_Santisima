@@ -20,13 +20,47 @@ html(lang='en')
 
         include includes/navbarGerente
 
-        table(class="table" id="table")
-            thead 
-                th Dirección   
-                th Ciudad
-                th Nombre
-        script(src="js/table.js")         
+        section.page-section.cta
+                .container
+                    .row
+                        .col-xl-9.mx-auto
+                            .cta-inner.text-center.rounded
+                                h2.section-heading.mb-5                                   
+                                ul.list-unstyled.list-hours.mb-5.text-left.mx-auto                                      
+                                        table(class="table" id="table")
+                                            thead                                             
+                                                    th Documento  
+                                                    th Nombre 
+                                                    th Celular
+                                                    th Dirección 
+                                                    th Borrar
+                                                    th Actualizar   
+                                        
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-6.col-lg-7.mx-auto
+                            .bg-faded.rounded.p-5
+                                #main
+                                    form(id="form" action="#")
+                                        h2.section-heading.mb-4
+                                            span.section-heading-upper Crear Sede
+                                        div.username
+                                            input(name='direccion' id='direccion' type="text" placeholder="Direccion" value=162635) 
+                                        br
+                                        div.username
+                                            input(name='ciudad' id='ciudad' type="text" placeholder="Ciudad"  value='verna') 
+                                        br
+                                        div.username 
+                                            input(name='nombre' id='nombre' type="text" placeholder="Nombre" value='sucasa') 
+                                        br
+                                        div.username
+                                            input(name='gerente' id='gerente' type="text" placeholder="Gerente" value=1000084641) 
+                                        input(type="submit" value="agregar")                  
+        script(src="js/table.js")   
         script(src="js/sedeScript.js")        
+              
                 
 
     include includes/footer

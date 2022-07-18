@@ -1,11 +1,10 @@
 form = document.getElementById("form")
-eliminar = document.getElementById("borrar")
-form.addEventListener('submit',()=>{
-    
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
     const formData= new FormData(form) 
     /*const path = ('/profesor/create/create.php')*/
-    const path = ("../src/php/cSede.php")
-    fetch(path, {
+    const path = ("../../src/php/agendarCita.php")
+    fetch('/ajax/profesor/create/create1.php', {
         method: 'POST',
         body: formData,
         headers: {
@@ -15,8 +14,4 @@ form.addEventListener('submit',()=>{
     }).catch(()=>{
         alert("no esta funcionando")
     })
-})
-
-eliminar.addEventListener("click",()=>{
-    
 })

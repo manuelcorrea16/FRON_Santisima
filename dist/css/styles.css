@@ -11306,10 +11306,13 @@ p {
   font-family: cursive;
 }
 
-.th {
-  color: #ffff;
-  text-align: inherit;
-  text-align: -webkit-match-parent;
+th, td {
+  color: #ffeded;
+}
+
+.borrar {
+  padding: auto;
+  color: #ffeded;
 }
 
 .site-heading {
