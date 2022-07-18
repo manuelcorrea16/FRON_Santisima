@@ -117,7 +117,7 @@ COLLATE = utf8mb4_unicode_ci;
 -- Table `SantisimaSpa`.`sede`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`sede` (
-  `direccion` VARCHAR(50) NOT NULL ,
+  `direccion` INT NOT NULL AUTO_INCREMENT,
   `ciudad` VARCHAR(45) NOT NULL,
   `nombre sede` VARCHAR(45) NOT NULL,
   `gerente_cedula` INT NOT NULL,
@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`administrador` (
   `nombre` VARCHAR(45) NOT NULL,
   `celular` VARCHAR(45) NOT NULL,
   `direccion` VARCHAR(45) NULL DEFAULT NULL,
-  `sede_direccion` VARCHAR(50)NOT NULL,
+  `sede_direccion` INT NOT NULL,
   `gerente_cedula` INT NOT NULL,
   PRIMARY KEY (`cedula`, `sede_direccion`, `gerente_cedula`),
   INDEX `fk_administrador_sede1_idx` (`sede_direccion` ASC),
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`insumo` (
   `cantidad` INT NOT NULL,
   `nombre` VARCHAR(45) NOT NULL,
   `administrador_cedula` INT NOT NULL,
-  `administrador_sede_direccion` VARCHAR(50) NOT NULL,
+  `administrador_sede_direccion` INT NOT NULL,
   `administrador_gerente_cedula` INT NOT NULL,
   PRIMARY KEY (`idinsumo`, `administrador_cedula`, `administrador_sede_direccion`, `administrador_gerente_cedula`),
   INDEX `fk_insumo_administrador1_idx` (`administrador_cedula` ASC, `administrador_sede_direccion` ASC, `administrador_gerente_cedula` ASC),
@@ -190,9 +190,9 @@ CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`manicurista` (
   `manicuristacol` VARCHAR(45) NOT NULL,
   `profesor` VARCHAR(45) NOT NULL,
   `administrador_cedula` INT NOT NULL,
-  `sede_direccion` VARCHAR(50) NOT NULL,
-  `sede_direccion1` VARCHAR(50) NOT NULL,
-  `sede_gerente_cedula` VARCHAR(50) NOT NULL,
+  `sede_direccion` INT NOT NULL,
+  `sede_direccion1` INT NOT NULL,
+  `sede_gerente_cedula` INT NOT NULL,
   PRIMARY KEY (`cedula`, `administrador_cedula`, `sede_direccion`, `sede_direccion1`, `sede_gerente_cedula`),
   INDEX `fk_manicurista_sede1_idx` (`sede_direccion1` ASC, `sede_gerente_cedula` ASC),
   CONSTRAINT `fk_manicurista_sede1`
@@ -213,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`registros` (
   `fecha` VARCHAR(45) NOT NULL,
   `informacion` VARCHAR(45) NOT NULL,
   `administrador_cedula` INT NOT NULL,
-  `administrador_sede_direccion` VARCHAR(50) NOT NULL,
+  `administrador_sede_direccion` INT NOT NULL,
   `administrador_gerente_cedula` INT NOT NULL,
   `Tipo-registros_idTipo-registros` INT NOT NULL,
   PRIMARY KEY (`id`, `administrador_cedula`, `administrador_sede_direccion`, `administrador_gerente_cedula`, `Tipo-registros_idTipo-registros`),
@@ -241,14 +241,14 @@ CREATE TABLE IF NOT EXISTS `SantisimaSpa`.`servicio_has_manicurista` (
   `servicio_idservicios` INT NOT NULL,
   `servicio_insumo_idinsumo` INT NOT NULL,
   `servicio_insumo_administrador_cedula` INT NOT NULL,
-  `servicio_insumo_administrador_sede_direccion` VARCHAR(50) NOT NULL,
+  `servicio_insumo_administrador_sede_direccion` INT NOT NULL,
   `servicio_insumo_administrador_gerente_cedula` INT NOT NULL,
   `manicurista_cedula` INT NOT NULL,
   `manicurista_administrador_cedula` INT NOT NULL,
-  `manicurista_sede_direccion` VARCHAR(50) NOT NULL,
+  `manicurista_sede_direccion` INT NOT NULL,
   PRIMARY KEY (`servicio_idservicios`, `servicio_insumo_idinsumo`, `servicio_insumo_administrador_cedula`, `servicio_insumo_administrador_sede_direccion`, `servicio_insumo_administrador_gerente_cedula`, `manicurista_cedula`, `manicurista_administrador_cedula`, `manicurista_sede_direccion`),
-  INDEX `fk_servicio_has_manicurista_manicurista1_idx` (`manicurista_cedula` ASC, `manicurista_administrador_cedula` ASC, `manicurista_sede_direccion` ) ,
-  INDEX `fk_servicio_has_manicurista_servicio1_idx` (`servicio_idservicios` ASC, `servicio_insumo_idinsumo` ASC, `servicio_insumo_administrador_cedula` ASC, `servicio_insumo_administrador_sede_direccion` , `servicio_insumo_administrador_gerente_cedula` ASC) ,
+  INDEX `fk_servicio_has_manicurista_manicurista1_idx` (`manicurista_cedula` ASC, `manicurista_administrador_cedula` ASC, `manicurista_sede_direccion` ASC) ,
+  INDEX `fk_servicio_has_manicurista_servicio1_idx` (`servicio_idservicios` ASC, `servicio_insumo_idinsumo` ASC, `servicio_insumo_administrador_cedula` ASC, `servicio_insumo_administrador_sede_direccion` ASC, `servicio_insumo_administrador_gerente_cedula` ASC) ,
   CONSTRAINT `fk_servicio_has_manicurista_servicio1`
     FOREIGN KEY (`servicio_idservicios` , `servicio_insumo_idinsumo` , `servicio_insumo_administrador_cedula` , `servicio_insumo_administrador_sede_direccion` , `servicio_insumo_administrador_gerente_cedula`)
     REFERENCES `SantisimaSpa`.`servicio` (`idservicios` , `insumo_idinsumo` , `insumo_administrador_cedula` , `insumo_administrador_sede_direccion` , `insumo_administrador_gerente_cedula`)

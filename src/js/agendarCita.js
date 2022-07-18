@@ -8,7 +8,11 @@ form.addEventListener('submit',(e)=>{
         method: 'POST',
         body: formData,
         headers: {
+<<<<<<< HEAD
             
+=======
+            "Content-type": "application/json",
+>>>>>>> 4f9ef181f7b644a4e4970db435e591bb817466d1
             "Accept": "application/json"
         } 
     }).catch(()=>{

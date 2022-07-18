@@ -18,12 +18,20 @@ p {
 .span.nombre{
     font-family: cursive;
 }
+<<<<<<< HEAD
 th,td{
   color: rgb(255, 237, 237);
 }
 .borrar{
   padding: auto;
   color: rgb(255, 237, 237);
+=======
+th{
+  color: #ffff;
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+  
+>>>>>>> 4f9ef181f7b644a4e4970db435e591bb817466d1
 }
 .site-heading {
     margin-top: 5rem;

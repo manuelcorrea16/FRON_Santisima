@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 form = document.getElementById("form")
 eliminar = document.getElementById("borrar")
 form.addEventListener('submit',()=>{
@@ -20,3 +21,5 @@ form.addEventListener('submit',()=>{
 eliminar.addEventListener("click",()=>{
     
 })
+=======
+>>>>>>> 4f9ef181f7b644a4e4970db435e591bb817466d1

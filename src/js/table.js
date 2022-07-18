@@ -1,17 +1,29 @@
 window.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     const path = "../src/php/tablas.php"
     const tableName = {
         table: "manicurista"
     }
     fetch(path,{
+=======
+    const path = "../php/manicuristaScript.php"
+    const tableName = {
+        table: "manicurista"
+    }
+    fetch(path),{
+>>>>>>> 4f9ef181f7b644a4e4970db435e591bb817466d1
         method: 'POST',
         body: tableName,
         headers:{
             "Content-type": "application/json",
             "Accept": "application/json"
         }
+<<<<<<< HEAD
     })
+=======
+    }
+>>>>>>> 4f9ef181f7b644a4e4970db435e591bb817466d1
     .then(res => res.ok ? Promise.resolve(res) : Promise.reject(new Error('Failed to load')))
     /*.then(res = JSON.parse(res))*/
     .then(res => res.json())
