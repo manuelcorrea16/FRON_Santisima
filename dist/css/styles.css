@@ -11306,6 +11306,12 @@ p {
   font-family: cursive;
 }
 
+.th {
+  color: #ffff;
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;

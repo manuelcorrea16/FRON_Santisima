@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
     const path = "../php/manicuristaScript.php"
@@ -10,7 +9,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         
         const table = document.getElementById("table")
         const fragment = document.createDocumentFragment()
-        for(const userInfo of res){
+        //for(const userInfo of res){
             const row = document.createElement("TR")
             const cedula = document.createElement("TD")
             const nombre = document.createElement("TD")
@@ -39,7 +38,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
             row.append(eliminar)
             row.append(actualizar)
             fragment.appendChild(row)
-        }
+        //}
         table.appendChild(fragment)
 
     }).catch(err=>console.log(err))

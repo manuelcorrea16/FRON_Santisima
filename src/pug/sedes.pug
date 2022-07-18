@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Santisima SPA 
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbarGerente
+
+        table(class="table" id="table")
+            thead 
+                th Dirección   
+                th Ciudad
+                th Nombre
+        script(src="js/table.js")         
+        script(src="js/sedeScript.js")        
+                
+
+    include includes/footer
+
+    include includes/scripts
