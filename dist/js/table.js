@@ -1,7 +1,17 @@
 window.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
     const path = "../php/manicuristaScript.php"
-    fetch(path)
+    const tableName = {
+        table: "manicurista"
+    }
+    fetch(path),{
+        method: 'POST',
+        body: tableName,
+        headers:{
+            "Content-type": "application/json",
+            "Accept": "application/json"
+        }
+    }
     .then(res => res.ok ? Promise.resolve(res) : Promise.reject(new Error('Failed to load')))
     /*.then(res = JSON.parse(res))*/
     .then(res => res.json())
@@ -9,7 +19,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         
         const table = document.getElementById("table")
         const fragment = document.createDocumentFragment()
-        //for(const userInfo of res){
+        for(const userInfo of res){
             const row = document.createElement("TR")
             const cedula = document.createElement("TD")
             const nombre = document.createElement("TD")
@@ -38,7 +48,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
             row.append(eliminar)
             row.append(actualizar)
             fragment.appendChild(row)
-        //}
+        }
         table.appendChild(fragment)
 
     }).catch(err=>console.log(err))

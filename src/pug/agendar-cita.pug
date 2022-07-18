@@ -26,23 +26,23 @@ html(lang='en')
                         .col-xl-6.col-lg-7.mx-auto
                             .bg-faded.rounded.p-5
                                 #main
-                                form(action="#")
+                                form(id="form" action="#")
                                 h2.section-heading.mb-4
                                     span.section-heading-upper Agenda tú cita
                                 div.username
-                                    input(type="text" placeholder="Sede")
+                                    input(id='sede' type="text" placeholder="Sede")
                                 br
                                 div.username
-                                    input(type="number" placeholder="servicio")
+                                    input(id='servicio' type="number" placeholder="Nombre del servicio")
                                 br
                                 div.username
-                                    input(type="date" placeholder="fecha")
+                                    input(id='fecha' type="date" placeholder="Digite su fecha")
                                 br
                                 div.username
-                                    input(type="time" placeholder="Horario")
+                                    input(id='horario' type="time" placeholder="Horario")
                                 br
                                 div.username
-                                    input(type="number" placeholder="Cedula")
+                                    input(id='cedula' type="number" placeholder="Ingrese su cedula")
                                 
                                 
                                 button(type="button") Ingresar
@@ -50,7 +50,7 @@ html(lang='en')
                                     a(href='recordar-contraseña.html') Recordar contraseña 
                                 p                                    
                                     a(href='registrarse.html') Registrarse
-
+        script(src="js/agendarCita.js")   
 
 
 

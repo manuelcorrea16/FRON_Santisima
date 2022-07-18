@@ -26,6 +26,34 @@ html(lang='en')
                 th nombre 
                 th celular
                 th dirección
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-6.col-lg-7.mx-auto
+                            .bg-faded.rounded.p-5
+                                #main
+                                form(id="form" action="#")
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper Crear Manicurista
+                                div.username
+                                    input(id='cedula' type="text" placeholder="Cedula")
+                                br
+                                div.username
+                                    input(id='nombre' type="text" placeholder="Nombre")
+                                br
+                                div.username
+                                    input(id='dirección' type="text" placeholder="Dirección")
+                                br
+                                div.username
+                                    input(id='especialidad' type="text" placeholder="Especialidad")
+                                br
+                                div.username
+                                    p 
+                                        Es profesor?
+                                    input(id='cedula' type="checkbox" placeholder="Es profesor?")
+
+                                button(type="button") Ingresar                   
         script(src="js/table.js")   
         script(src="js/manicuristaScript.js")        
               
